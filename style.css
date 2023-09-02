@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  padding: 60px 200px;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.box {
+  width: 100%;
+  min-height: 500px;
+  padding: 50px 40px;
+}
+
+/* CSS For Left Column */
+
+.left-col {
+  background: #272a33;
+  color: #fff;
+}
+
+.form {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.form-group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  background: none;
+  outline: none;
+  border: none;
+  color: #ccc;
+  padding-top: 5px;
+  border-bottom: 2px solid #343741;
+}
+
+.form-group label {
+  font-size: .9rem;
+  color: #ccc;
+}
+
+.form-group textarea {
+  resize: none;
+}
+
+
+.btn {
+  background: #ea993f;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 10px 22px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+/* CSS For Right Column */
+
+.right-col {
+  background: #1d1e22;
+  color: #fff;
+}
+
+.right-col h3 {
+  font-weight: 500;
+}
+
+.right-col .desc {
+  font-size: 1rem;
+  color: #57575a;
+  margin-top: 5px;
+}
+
+.contact-list {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.contact-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.contact-group .icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #222328;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.contact-group .icon ion-icon {
+  font-size: 18px;
+  color: #fff;
+}
+
+.contact-group p span {
+  margin-left: 2px;
+  font-size: .9rem;
+  color: #57575a;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 998px) {
+  
+  .wrapper {
+    padding: 60px 80px;
+  }
+
+}
+
+@media screen and (max-width: 760px) {
+  
+  .wrapper {
+    padding: 60px 40px;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .wrapper {
+    padding: 60px 10px;
+  }
+
+  .box {
+    padding: 50px 30px;
+  }
+
+}
